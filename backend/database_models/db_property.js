@@ -34,7 +34,11 @@ const propertySchema=new Schema({
     pbookedDates:[{
         type:Date,
         default:[]
-    }]
+    }],
+    pavailable:{
+        type:Boolean,
+        default:true
+    }
 })
 const Property=mongoose.model('Property',propertySchema);
 module.exports={Property};
