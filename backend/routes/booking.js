@@ -32,5 +32,11 @@ router.post('/finishBooking', async (req, res) => {
     await property.save();
     res.status(200).json({msg:'Booking successful'})
 })
+//Todo 
+//Add a route to get all bookings of a tenant
+//Add a route to get all bookings of a renter
+//Add a route to get all bookings of a property
+//Route to cancel booking
+//route to add the booking in bookings database
 
 module.exports = router;
